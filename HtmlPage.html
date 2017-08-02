@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    
+    <script type="text/javascript">
+        $('document').ready(function () {
+
+            $('#mostra').bind('click', mostra())
+            $('#nascondi').bind('click', nascondi())
+
+            function mostra() {
+                $('box').show();
+            }
+            function nascondi() {
+                $('box').hide();
+            }
+
+        })
+    </script>
+
+</head>
+<body>
+    <div id="box" style="height:200px; width:200px; background:red;"></div>
+    <input type="button" id="mostra" value="mostra" />
+    <input type="button" id="nascondi" value="nascondi"/>
+
+</body>
+</html>

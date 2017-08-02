@@ -5,20 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-                <button type="button" class="btn">Basic</button>
-            <script type="text/javascript">
-                document.write("ciao sono javascript");
-            </script>
+            <asp:ScriptManager ID="scriptManager1" runat="server">
+                <Scripts>
+                    <asp:ScriptReference Path="~/Scripts/jquery-3.1.1.min.js" />
+                </Scripts>
+            </asp:ScriptManager>
+
+         
+    
+
+               <%-- inizio programma--%>
+            <h1>ciao ciccio</h1>
+            <div id="box" style="height: 200px; width: 200px; background: red;"></div>
+            <input type="button" id="mostra" value="mostra" />
+            <input type="button" id="nascondi" value="nascondi" />
+
+            <%-- fine programma--%>
+                
         </div>
-        <%--   <script src="bootstrap-3.3.7-dist/jquery/jquery-3.2.1.min.js"></script>--%>
     </form>
 </body>
 </html>
